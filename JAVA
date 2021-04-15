@@ -1,0 +1,36 @@
+  <li>
+            <div data-role="main" class="ui-content">
+                <a href="#myPopup1" data-rel="popup1" class="ui-btn ui-btn-inline ui-corner-all">Contacto</a>
+                <div data-role="popup1" id="myPopup1">
+                  <p>Hay un mejor contacto con tu Medico, agenda cita y llama a tu medico</p>
+                </div>
+        <li>
+            <div data-role="main" class="ui-content">
+                <a href="#myPopup2" data-rel="popup2" class="ui-btn ui-btn-inline ui-corner-all">Alertas</a>
+                
+                <div data-role="popup" id="myPopup">
+                  <p>Proporciona alertas, si detecta anomalias en tus registros</p>
+                </div>
+        </li>
+
+
+
+         <div id="Doctores">
+  <!--####### funcion para tabla mysql # #######-->
+  Cargando....
+  </div>
+
+   <script>
+     function hola(){
+        alert('hola2');
+     }
+    //$('#Doctores').click(function(){alert('hola');});
+   //$('#Doctores').click(hola);
+   function pontabla(datos,status){
+
+    //   alert(status);
+
+      $('#Doctores').html(datos);
+   }
+   $.get('consultas.php',pontabla);
+   </script>

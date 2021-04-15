@@ -1,0 +1,19 @@
+/*Hoja de estilos*/
+*{
+background:#F3B95D ;
+font-family: sans-serif;
+}
+.tit{
+    text-align: center;
+
+}
+
+#entorno{
+display: block;
+margin: 0 auto;
+}
+#fondo{
+opacity: 0.3;
+
+}
+
